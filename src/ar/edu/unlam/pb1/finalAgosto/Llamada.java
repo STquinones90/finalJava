@@ -2,27 +2,35 @@ package ar.edu.unlam.pb1.finalAgosto;
 
 public class Llamada {
 
-	private boolean fueExitosa;
-	private String observaciones;
-	
-	public Llamada(boolean fueExitosa, String observaciones) {
-		this.setFueExitosa(fueExitosa);
-		this.setObservaciones(observaciones);
-	}
+  private boolean fueExitosa;
+  private String observaciones;
 
-	public boolean isFueExitosa() {
-		return fueExitosa;
-	}
+  public Llamada(boolean fueExitosa, String observaciones) {
+    this.setFueExitosa(fueExitosa);
+    this.setObservaciones(observaciones);
+  }
 
-	public void setFueExitosa(boolean fueExitosa) {
-		this.fueExitosa = fueExitosa;
-	}
+  public boolean isFueExitosa() {
+    return fueExitosa;
+  }
 
-	public String getObservaciones() {
-		return observaciones;
-	}
+  public void setFueExitosa(boolean fueExitosa) {
+    this.fueExitosa = fueExitosa;
+  }
 
-	public void setObservaciones(String observaciones) {
-		this.observaciones = observaciones;
-	}
+  public String getObservaciones() {
+    return observaciones;
+  }
+
+  public void setObservaciones(String observaciones) {
+    this.observaciones = observaciones;
+  }
+
+  @Override
+  public String toString() {
+    return "Llamada{" +
+        "fueExitosa=" + fueExitosa +
+        ", observaciones='" + observaciones + '\'' +
+        '}';
+  }
 }
